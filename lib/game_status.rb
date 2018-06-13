@@ -17,8 +17,12 @@ WIN_COMBINATIONS = [
   ]
   
 def won?(board) 
-  WIN_COMBINATIONS.each |combination| do
-    combination.each ||
+  WIN_COMBINATIONS.each do |combination|
+    row_contents = []
+    combination.each do |index|
+      if position_taken(board, index)
+        row_contents 
+      end  
   end
 end
 
