@@ -20,7 +20,7 @@ def won?(board)
   WIN_COMBINATIONS.each do |combination|
     row_contents = []
     combination.each do |index|
-      if position_taken(board, index)
+      if position_taken?(board, index)
         row_contents << board[i]
       end  
     end
