@@ -33,6 +33,6 @@ def won?(board)
   return false
 end
 
-def full?(board){
+def full?(board)
   board.include?(" ") 
-}
+end
