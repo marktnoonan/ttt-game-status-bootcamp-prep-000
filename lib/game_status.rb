@@ -25,11 +25,11 @@ def won?(board)
         ROW_CONTENTS << board[i]
       end  
     end
-  end
-  if (ROW_CONTENTS[0] == ROW_CONTENTS[1] && ROW_CONTENTS[1] == ROW_CONTENTS[2])
+      if (ROW_CONTENTS[0] == ROW_CONTENTS[1] && ROW_CONTENTS[1] == ROW_CONTENTS[2])
     combination
   else
     false
+  end
   end
 end
 
