@@ -21,14 +21,14 @@ WIN_COMBINATIONS = [
 def won?(board) 
   WIN_COMBINATIONS.each do |combination|
     ROW_CONTENTS.clear
-    combination.each do |index|
-      if position_taken?(board, index)
-        ROW_CONTENTS << board[index]
+      combination.each do |index|
+        if position_taken?(board, index)
+          ROW_CONTENTS << board[index]
+        end
+        if (ROW_CONTENTS.length == 3 && ROW_CONTENTS[0] == ROW_CONTENTS[1] && ROW_CONTENTS[1] == ROW_CONTENTS[2])
+          return combination
+        end      
       end
-      if (ROW_CONTENTS.length == 3 && ROW_CONTENTS[0] == ROW_CONTENTS[1] && ROW_CONTENTS[1] == ROW_CONTENTS[2])
-        return ROW_CONTENTS
-      end      
-    end
     end
   return false
 end
