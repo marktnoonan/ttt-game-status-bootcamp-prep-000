@@ -21,7 +21,7 @@ def won?(board)
     ROW_CONTENTS = []
     combination.each do |index|
       if position_taken?(board, index)
-        ROW_CONTENTS<< board[i]
+        ROW_CONTENTS << board[i]
       end  
     end
   end
