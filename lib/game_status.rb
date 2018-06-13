@@ -23,6 +23,7 @@ def won?(board)
       if position_taken(board, index)
         row_contents << board[i]
       end  
+    end
   end
   row_contents[0] == row_contents[1] && row_contents[1] == row_contents[2]
 end
