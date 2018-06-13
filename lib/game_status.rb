@@ -22,7 +22,7 @@ def won?(board)
   WIN_COMBINATIONS.each do |combination|
     combination.each do |index|
       if position_taken?(board, index)
-        ROW_CONTENTS << board[i]
+        ROW_CONTENTS << board[index]
       end  
     end
       if (ROW_CONTENTS[0] == ROW_CONTENTS[1] && ROW_CONTENTS[1] == ROW_CONTENTS[2])
