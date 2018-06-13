@@ -16,16 +16,16 @@ WIN_COMBINATIONS = [
   [2,4,6]
   ]
   
-  row_contents = []
+  ROW_CONTENTS = []
 
 def won?(board) 
   WIN_COMBINATIONS.each do |combination|
     combination.each do |index|
       if position_taken?(board, index)
-        row_contents << board[index]
+        ROW_CONTENTS << board[index]
       end  
     end
-      if (row_contents[0] == row_contents[1] && row_contents[1] == row_contents[2] && (row_contents[0] == "X" || row_contents[0] == "O"))
+      if (ROW_CONTENTS[0] == ROW_CONTENTS[1] && ROW_CONTENTS[1] == ROW_CONTENTS[2] && (ROW_CONTENTS[0] == "X" || ROW_CONTENTS[0] == "O"))
         return combination
       else
       return false
