@@ -33,3 +33,6 @@ def won?(board)
   return false
 end
 
+def full?(board){
+  return 
+}
