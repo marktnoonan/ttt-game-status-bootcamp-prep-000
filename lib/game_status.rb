@@ -26,9 +26,9 @@ def won?(board)
       end  
     end
       if (ROW_CONTENTS[0] == ROW_CONTENTS[1] && ROW_CONTENTS[1] == ROW_CONTENTS[2])
-    combination
+    return combination
   else
-    false
+    return false
   end
   end
 end
