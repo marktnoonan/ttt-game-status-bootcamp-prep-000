@@ -19,8 +19,8 @@ WIN_COMBINATIONS = [
   ROW_CONTENTS = []
 
 def won?(board) 
-  ROW_CONTENTS.clear
   WIN_COMBINATIONS.each do |combination|
+    ROW_CONTENTS.clear
     combination.each do |index|
       if position_taken?(board, index)
         ROW_CONTENTS << board[index]
