@@ -17,6 +17,8 @@ WIN_COMBINATIONS = [
   ]
   
 def won?(board) 
-  false  
+  WIN_COMBINATIONS.each |combination| do
+    combination.each ||
+  end
 end
 
